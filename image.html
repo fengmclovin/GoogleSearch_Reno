@@ -3,6 +3,64 @@
 
 <head>
     <title>Image</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            /* Set the body height to 100% of the viewport height */
+            margin: 0;
+            /* Remove default margin */
+        }
+
+        h2 {
+            position: absolute;
+            bottom: 300px;
+            right: 460px;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            display: flex;
+            top: 0;
+            /* Position at the top */
+            right: 0;
+            /* Position at the right */
+            /* Make list items display in a row */
+        }
+
+        li {
+            padding: 8px;
+            margin-bottom: 5px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+
+
+        form {
+            text-align: center;
+            position: flex;
+            justify-content: center;
+        }
+
+        .button {
+            padding: 2px;
+            margin: 20px;
+            /* Add space around input elements */
+        }
+
+        .search {
+            width: 500px;
+            /* Adjust width as needed */
+        }
+    </style>
+
 </head>
 
 <body>
@@ -11,15 +69,21 @@
         <nav>
             <ul>
                 <li><a href="index.html">Google Search</a></li>
-                <li><a href="image.html">Image</a></li>
+                <li><a href="advance.html">Advanced</a></li>
             </ul>
         </nav>
     </header>
-    
-    <form action="https://www.google.com/images">
-        <input type="text" name="q">
-        <input type="submit" value="Google Image">
-    </form>
+
+    <div>
+        <img src="https://www.google.com/images/srpr/logo11w.png" /><br>
+        <h2><a href="https://www.google.com/images">Image</a></h2>
+        <form name="google" action="https://www.google.com/images"><br>
+            <input type="text" class="search" name="q"><br>
+            <input type="submit" class="button" name="submit" value="Google Search">
+            <input type="submit" class="button" name="lucky" value="I'm Feeling Lucky">
+        </form>
+    </div>
+
 </body>
 
 </html>
