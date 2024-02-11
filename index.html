@@ -34,6 +34,18 @@
             background-color: #f2f2f2;
             border-radius: 5px;
         }
+
+        .button {
+            padding: 2px;
+            margin: 20px;
+            /* Add space around input elements */
+        }
+
+        .search {
+            width: 500px;
+            margin: 20px;
+            /* Adjust width as needed */
+        }
     </style>
     
 </head>
@@ -49,10 +61,14 @@
         </nav>
     </header>
     
-    <form action="https://www.google.com/search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
-    </form>
+    <div>
+        <img src="https://www.google.com/images/srpr/logo11w.png" /><br>
+        <form action="https://www.google.com/search" name="google">
+            <input type="text" class="search" name="q"><br>
+            <input type="submit" class="button" name="submit" value="Google Search">
+            <input type="submit" class="button" name="lucky" value="I'm Feeling Lucky">
+        </form>
+    </div>
 </body>
 
 </html>
